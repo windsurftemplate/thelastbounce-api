@@ -31,7 +31,7 @@ interface VerifyResponse {
 
 export default async function handler(
   req: VercelRequest,
-  res: VercelResponse<VerifyResponse>
+  res: VercelResponse
 ) {
   // Handle CORS preflight
   if (req.method === 'OPTIONS') {
